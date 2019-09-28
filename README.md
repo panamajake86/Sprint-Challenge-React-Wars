@@ -26,13 +26,23 @@ Demonstrate your understanding of this Sprint's concepts by answering the follow
 
 - [ ] What is React JS and what problems does it try and solve? Support your answer with concepts introduced in class and from your personal research on the web.
 
+ReactJS is a way for developers to write large applications.  The problems that it trys to solve is getting these applications written and deployed quickly and effectively.  JSX is the biggest way I can describe it attempting to solve that problem.  By giving developers a way to logically and seamlessly move between HTML and JS, React has made the process for creating large applications much faster.
+
 - [ ] What does it mean to _think_ in react?
+
+I feel like this is a vague question, based on something that we never went over, looking for a specific answer. To me, thinking in React is being able to keep your mind on topic while navigating through JSX, a brand new language that I am trying to get the hang of.
 
 - [ ] Describe state.
 
+State is an object inside a component in React.  State is variable and can be changed through different means, mostly through interaction by the user.
+
 - [ ] Describe props.
 
+Props are properties, duh, that get passed into a component so that you can use them within that component.  They are similar to parameters in a function.Props are properties, duh, that get passed into a component so that you can use them within that component.  They are similar to parameters in a function.
+
 - [ ] What are side effects, and how do you sync effects in a React component to state or prop changes?
+
+Side effects are things that affect anything outside the scope of the function they are in. ie timers, api calls, manually manipulating the DOM.  You sync effects in a component to changes in state or props by using an effects hook.
 
 ## Project Set Up
 
