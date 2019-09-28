@@ -2,6 +2,7 @@ import React from "react";
 import { Container, Row } from "reactstrap";
 import axios from "axios";
 import SWCard from "./SWCard";
+import "./StarWars.css";
 
 export default function SWList() {
     const [wars, setWars] = React.useState([]);

@@ -1,6 +1,7 @@
 import React from "react";
 import { Card, CardText, CardBody, CardTitle, Col } from "reactstrap";
 import Axios from "axios";
+import "./StarWars.css";
 
 export default function SWCard(props) {
 
@@ -33,15 +34,17 @@ export default function SWCard(props) {
 
 
     return (
-        <Col height="100%">
-            <Card height="100%">
-                <CardBody height="100%">
-                    <CardTitle>{props.name}</CardTitle>
+        <div className="wrapper">
+        <Col>
+            <Card className="card">
+                <CardBody>
+                    <CardTitle><h3>{props.name}</h3></CardTitle>
                     <CardText><p>{speciesName} from {homeName}</p></CardText>
-                    <CardText>First appears in {films}</CardText>
-                    <CardText>Pilots {ship}</CardText>
+                    <CardText><p>Randomly appears in {films}</p></CardText>
+                    <CardText><p>Pilots {ship}</p></CardText>
                 </CardBody>
             </Card>
         </Col>
+        </div>
     );
 }
