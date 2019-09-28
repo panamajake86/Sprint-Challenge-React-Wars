@@ -10,8 +10,7 @@ export default function SWList() {
         async function fetchData(){
             try {
                 const starList = await axios.get("https://swapi.co/api/people/");
-                setWars(starList.data);
-                console.log(starList.data);
+                setWars(starList.data.results);
             } catch(err) {
                 console.log(err);
             }
@@ -25,10 +24,18 @@ export default function SWList() {
         <Container>
             <Row>
                 <div className="starWars">
-                    <SWCard 
-                    
-                    />
-                </div>
+                    {wars.map((e, i) => {
+                        return (<SWCard 
+                        name = {e.name}
+                        species = {e.species}
+                        homeworld = {e.homeworld}
+                        films = {e.films}
+                        starships = {e.starships}
+                        vehicles = {e.vehicles}
+                        key = {i}
+                        />)
+                    })}
+                    </div>
             </Row>
         </Container>
     );
