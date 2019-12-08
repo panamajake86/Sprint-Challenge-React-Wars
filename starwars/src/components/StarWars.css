@@ -1,0 +1,24 @@
+#root{
+    width: 50%;
+    height: 30%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.wrapper{
+    
+    margin: 50px;
+    align-content: center;
+}
+
+.card{
+    border: 1px solid darkgrey;
+    background: rgba(255, 255, 255, 0.6);
+}
+
+p {
+    padding-left: 20px;
+    padding-right: 20px;
+}
